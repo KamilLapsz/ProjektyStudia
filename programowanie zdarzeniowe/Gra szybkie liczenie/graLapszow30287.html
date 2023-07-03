@@ -1,0 +1,50 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\graLapszow30287.css">
+    <script src="js\graLapszow30287.js"></script>
+    <title>Kamil Lapszow - Gra</title>
+</head>
+
+<body>
+    <h1>Gra</h1>
+    <h2 id="liczenie">Szybkie liczenie</h2>
+    <h3 id="pozostalo"></h3>
+    <table>
+        <tr>
+            <th>Wynik:</th>
+            <th id="wynik">0</th>
+            <th>suma</th>
+        </tr>
+        <tr>
+            <td id="n1"></td>
+            <td id="n2"></td>
+            <td><input id="suma" type="number"></td>
+        </tr>
+        <tr>
+            <td id="n3"></td>
+            <td id="n4"></td>
+            <td><button onclick='zadanie()'>Zadanie</button></td>
+        </tr>
+        <tr>
+            <td id="n5"></td>
+            <td id="n6"></td>
+            <td><button onclick='sprawdz()'>Sprawdź</button></td>
+        </tr>
+    </table>
+    <label>ile wierszy</label>
+    <select id="ileWierszy">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <label>ile pytań</label>
+    <select id="ilePytan">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select><br>
+    <button onclick ='start()'>start</button>
+</body>

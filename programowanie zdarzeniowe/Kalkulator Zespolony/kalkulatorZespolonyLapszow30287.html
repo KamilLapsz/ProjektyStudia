@@ -1,0 +1,42 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\kalkulatorZespolonyLapszow30287.css">
+    <script src="js\kalkulatorZespolonyLapszow30287.js"></script>
+    <title>Kamil Lapszow - Kalkulator</title>
+</head>
+
+<body onload="load()">
+    <h1>Kalkulator Zespolony</h1>
+
+        <h3>Kalkulator</h3><br>
+        <label>z1 = a + bi</label>
+        <input type="number" id="a">
+        <input type="number" id="b"><label> i</label><br>
+        <select id="selectOperator"></select>
+        <br>
+        <label>z2 = c +di</label>
+        <input type="number" id="c">
+        <input type="number" id="d"><label> i</label><br><br>
+
+        <label>Wynik: </label>
+        <input id="wynik" type="text" readonly>
+        <br><br>
+        <button onclick="obliczWynik()">Oblicz</button>
+
+        <section id="wyniki">
+            <h3>Wyniki obliczeń</h3>
+            <table id="memoryObliczenia">
+                <tr>
+                    <th>z1</th>
+                    <th>operator</th>
+                    <th>z2</th>
+                    <th> = </th>
+                    <th>z1 + z2</th>
+                </tr>
+            </table>
+        </section>
+
+    <footer>
+        Kamil Lapszow
+    </footer>
+</body>

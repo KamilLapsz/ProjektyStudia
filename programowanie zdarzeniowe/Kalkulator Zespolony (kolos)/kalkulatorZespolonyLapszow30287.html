@@ -1,0 +1,64 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cssKL\kalkulatorZespolonyLapszow30287.css">
+    <script src="jsKL\kalkulatorZespolonyLapszow30287.js"></script>
+    <title>Kamil Lapszow - Kalkulator</title>
+</head>
+
+<body onload="loadKL()">
+    <h1>Kalkulator Zespolony</h1>
+
+    <section id="kalkulatorKL">
+        <h3>Kalkulator</h3><br>
+        <button onclick='generujKL()'>Generuj liczby z1, z2</button><br>
+        <label>z1 = (a + bi)</label>
+        <input type="number" readonly id="aKL">
+        <input type="number" readonly id="bKL"><label>* i</label><br>
+        <select id="selectOperatorKL">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+        </select>
+        <br>
+        <label>z2 = (c +di)</label>
+        <input type="number" readonly id="cKL">
+        <input type="number" readonly id="dKL"><label>* i</label><br><br>
+        <label>Oblicz sam: </label><br>
+        <label>z1+z2 = (e +fi)</label>
+        <input class="yellow" type="number" id="eKL">
+        <input class="yellow" type="number" id="fKL"><label>* i</label><br><br>
+
+        <label>Wynik: </label><button onclick="obliczWynikKL()">Sprawdz wynik:</button><br>
+        <label>z1+z2 = (g + hi)</label>
+        <input id="wynik_gKL" type="text" readonly>
+        <input id="wynik_hKL" type="text" readonly><label>* i</label>
+        <br><br>
+
+        <button onclick="zerujWynikKL()">Zeruj wynik</button>
+        <br><br>
+        <button onclick="doHistoriiKL()">Zobacz historie obliczen</button>
+    </section>
+
+    <section id="historiaKL">
+            <h3>Pamieć obliczeń</h3>
+            <table id="memoryObliczeniaKL">
+                <tr>
+                    <th>z1</th>
+                    <th>operator</th>
+                    <th>z2</th>
+                    <th> = </th>
+                    <th>z1 + z2</th>
+                    <th>wpis</th>
+                    <th>punkty</th>
+                    <th></th>
+                </tr>
+            </table>
+            <br><br>
+            <button onclick="doKalkulatorKL()">Do kalkulatora</button>
+        </section>
+        <br><br>
+        <label>Twoje punkty: </label><label id="punktyKL">0</label>
+    <footer>
+        Kamil Lapszow
+    </footer>
+</body>

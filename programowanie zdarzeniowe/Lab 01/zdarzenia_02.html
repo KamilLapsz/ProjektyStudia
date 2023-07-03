@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kamil Lapszow</title>
+        <style>
+            body {margin: 0px auto;text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1>Wybierz napis</h1>
+        <h2 id="napis"></h2>
+        <button onclick=nazwisko()>Nazwisko</button>
+        <button onclick=imie()>Imie</button>
+        <button onclick=index()>Index</button>
+
+        <br><br><label>Nazwisko:</label>
+        <input type="text" id="nazwisko" onchange=nazwiskoWpis();>
+        <br><label>Imie:</label>
+        <input type="text" id="imie" onchange=imieWpis();>
+        <br><label>Index:</label>
+        <input type="text" id="index" onchange=indexWpis();>
+
+        <script>
+            function nazwisko() {
+            document.getElementById("napis").innerHTML = "Łapszow";
+            }
+            function imie() {
+                document.getElementById("napis").innerHTML = "Kamil";
+            }
+            function index() {
+                 document.getElementById("napis").innerHTML = 30287;
+            }
+
+            function nazwiskoWpis() {
+                let x = document.getElementById("nazwisko").value;
+                document.getElementById("napis").innerHTML = x;
+            }
+            function imieWpis() {
+                let x = document.getElementById("imie").value;
+                document.getElementById("napis").innerHTML = x;
+            }
+            function indexWpis() {
+                let x = document.getElementById("index").value;
+                document.getElementById("napis").innerHTML = x;
+            }
+        </script>
+    </body>
+
+</html>

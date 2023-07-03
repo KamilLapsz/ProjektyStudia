@@ -1,0 +1,65 @@
+body{
+    margin: 15px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    text-align: center;
+    background-color: rgb(162, 222, 252);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+tr, th, td{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left: 0;
+    width:100%;
+    height:50px;
+    background:rgb(35, 182, 255);
+}
+
+button {
+    padding: 6px 30px;
+    border-radius: 10px;
+}
+
+.lewa {
+    border: 2px;
+    border-left-style: solid;
+}
+
+.dol {
+    border: 2px;
+    border-bottom-style: solid;
+}
+
+.lewadol {
+    border: 2px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+
+.prawa {
+    border: 2px;
+    border-right-style: solid;
+}
+
+.gora {
+    border: 2px;
+    border-top-style: solid;
+}
+
+.prawagora {
+    border: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+}

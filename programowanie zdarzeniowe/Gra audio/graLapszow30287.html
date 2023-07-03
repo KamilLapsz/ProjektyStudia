@@ -1,0 +1,80 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\graLapszow30287.css">
+    <script src="js\graLapszow30287.js"></script>
+    <title>Kamil Lapszow - Gra Audio</title>
+</head>
+
+<body onload="przedStart()">
+    <header id="page_header">
+        <h1>Połącz dzwięki i obrazy</h1>
+    </header>
+
+    <section id="startS">
+        <h3>Ustawienia gry</h3>
+        <label>Wybierz tryb gry:</label>
+        <select id="coLosuje">
+            <option value="img">losuj obrazki</option>
+            <option value="audio">losuj dźwięki</option>
+        </select><br><br>
+        <label>Twoje imie:</label>
+        <input type="text" id="imie"><br><br>
+        <label>Ile pytań:</label>
+        <select id="ilePytan">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected="selected">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select><br><br><br>
+        <button onclick ='start()'>Start</button>
+    </section>
+
+    <section id="imgS">
+        <label>Obrazy</label><br><br>
+        <img id="zwierzeWylosowaneIMG" src="img/" title="zwierze"><br>
+        <audio controls id="zwierzeWybraneAudio" autoplay loop>
+            <source id="myMusic" src="" type="audio/mp3">
+        </audio><br>
+        <select id="wyborDzwieku" onchange="grajImgDzwiek()">
+            <option value="cat" selected="selected">dzwiek 1</option>
+            <option value="cow">dzwiek 2</option>
+            <option value="dog">dzwiek 3</option>
+            <option value="horse">dzwiek 4</option>
+        </select>
+        <button onclick="checkImgAudio()">Zatwierdz</button>
+    </section>
+
+    <section id="audioS">
+        <label>Dzwięki</label><br><br>
+        <audio controls id="zwierzeWylosowaneAudio" autoplay loop>
+            <source id="myMusic" src="" type="audio/mp3">
+        </audio><br><br>
+        <img id="zwierzeWybraneIMG" src="img/cat.jpg" title="zwierze">
+        <select id="wyborObrazu" onchange="getImg()">
+            <option value="cat" selected="selected">Kot</option>
+            <option value="cow">Krowa</option>
+            <option value="dog">Pies</option>
+            <option value="horse">Koń</option>
+        </select>
+        <button onclick="checkImgAudio()">Zatwierdz</button>
+    </section> 
+    
+    <section id="statystykiS">
+        <h5>Statystyki</h5>
+        <label id="wynikStat">Masz teraz X punktów.</label><br>
+        <label id="zostaloPytan">Zostało Y pytań z Z.</label>
+        <br><br>
+        <button id="red" onclick ='przedStart()'>Reset gry</button>
+    </section> 
+
+    <section id="endS">
+        <h2>Koniec gry</h2>
+        <label id="pokazWynik">Twój wynik to: </label><br><br>
+        <button onclick ='przedStart()'>Nowa gra</button>
+    </section> 
+
+    <br><br><footer>Game by Kamil Lapszow</footer>
+
+</body>

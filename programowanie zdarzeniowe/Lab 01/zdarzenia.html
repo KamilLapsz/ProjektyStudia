@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kamil Lapszow</title>
+        <style>
+            body {margin: 0px auto;text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1>Wybierz napis</h1>
+        <h2 id="napis"></h2>
+        <button onclick=nazwisko()>Nazwisko</button>
+        <button onclick=imie()>Imie</button>
+        <button onclick=index()>Index</button>
+
+        <script>
+            function nazwisko() {
+            document.getElementById("napis").innerHTML = "Łapszow";
+            }
+            function imie() {
+                document.getElementById("napis").innerHTML = "Kamil";
+            }
+            function index() {
+                 document.getElementById("napis").innerHTML = 30287;
+            }
+        </script>
+    </body>
+
+</html>

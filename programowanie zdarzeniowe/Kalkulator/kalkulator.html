@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kamil Lapszow</title>
+        <style>
+            body {margin: 0px auto;text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1>Prosty kalkulator</h1>
+        
+        <input type="number" id="liczba1">
+            <select id="dzialanie">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+        <input type="number" id="liczba2">
+        <button onclick="oblicz()">=</button>
+        <input type="number" id="wynik" readonly onmouseover="oblicz()">
+
+        <script>
+            function oblicz(){
+            let liczb1 = document.getElementById("liczba1").value;
+            liczb1 = parseInt(liczb1);
+            let liczb2 = document.getElementById("liczba2").value;
+            liczb2 = parseInt(liczb2);
+            let operator = document.getElementById("dzialanie").value;
+            let wynik;
+
+            switch (operator){
+             case "+":
+                 wynik = liczb1 + liczb2;
+                 break;
+             case "-":
+                 wynik = liczb1-liczb2;
+                 break;             
+             case "*":
+                 wynik = liczb1*liczb2;
+                 break;             
+             case "/":
+                 wynik = liczb1/liczb2;
+                 break;
+             case "%":
+                 wynik = liczb1%liczb2;
+                 break;
+            }
+            document.getElementById("wynik").value= wynik;
+        }
+
+        </script>
+    </body>
+
+</html>

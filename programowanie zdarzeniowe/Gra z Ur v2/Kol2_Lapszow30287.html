@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cssKL\UrGameLapszow30287.css">
+    <script src="jsKL\UrGameLapszow30287.js"></script>
+    <title>Kamil Lapszow - Królewska gra z Ur</title>
+</head>
+
+<body onload="loadKL()">
+    <h1>Królewska gra z Ur</h1>
+    <p>Witamy w grze</p>
+
+    <section id="gameKL">
+        <p>Masz klikniec: <span id="ileKlikKL"></span></p>
+        <p>Masz trafien: <span id="ileTrafienKL"></span></p>
+        <p>Masz nietrafien: <span id="nietrafienKL"></span></p>
+        <p>Zostalo pionkow: <span id="zostaloKL"></span></p><br>
+        <br><button onclick="graczAKL()">Gracz A</button>
+        <table id="planszaKL"></table>
+        <button onclick="graczBKL()">Gracz B</button>
+    </section>
+
+    <br><button onclick="nowaGraKL()">Nowa gra</button>
+    <input type="number" id="sizeKL" value="10">
+
+    <p>Opis</p>
+    <p>Zbij wszystkie pionki.</p>
+    <p>Kazdy ruch to losowa liczba z kostki (1-6)</p>
+    <footer>
+        Kamil Lapszow
+    </footer>
+</body>

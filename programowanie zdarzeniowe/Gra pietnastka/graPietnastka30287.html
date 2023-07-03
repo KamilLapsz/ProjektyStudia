@@ -1,0 +1,24 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cssKL\graPietnastkaLapszow30287.css">
+    <script src="jsKL\graPietnastkaLapszow30287.js"></script>
+    <title>Kamil Lapszow - Gra Pietnastka</title>
+</head>
+
+<body onload="loadKL()">
+    <h1>Gra w tabliczkę "15"</h1>
+    <p>Ułóż kolejno liczby</p>
+
+    <section id="gameKL">
+        <table id="planszaKL"></table>
+        <label>Liczba ruchów: <span id="currentKL">0</span></label>
+        <button onclick="startGameKL()">Nowa gra</button>
+        <label>Wynik gry: <span id="wynikKL">0</span></label>
+        <br><br>
+        <label>Wymiary (n*n): </label><input id="userSizeKL" type="number" value="4">
+    </section>
+
+    <footer>
+        Kamil Lapszow
+    </footer>
+</body>
