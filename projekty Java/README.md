@@ -11,10 +11,10 @@ Zadania zostały wykonane w języku **Java**
 
 Zadania z kolokwium
 - zadanie 1:
-![z1](/img/z1.png)
+![z1](./img/z1.png)
 - zadanie 2:
-![z2](/img/z2.png)
+![z2](./img/z2.png)
 - zadanie 3:
-![z3](/img/z3.png)
+![z3](./img/z3.png)
 - zadanie 4:
-![z4](/img/z4.png)
+![z4](./img/z4.png)
